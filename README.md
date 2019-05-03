@@ -8,7 +8,7 @@ See `scripts/source_urls/`.
 For your particular task, you will need to replace the plain text files in that directory with your own: give them approprite names (i.e. names of your classes/categories) and copy urls of image albums that belong to that class into each text file.
 
 Here is what each script (located under `scripts` directory) does:
-- `1_get_urls.sh` - iterates through text files under `scripts/source_urls` downloading URLs of images for each of class/category. The [Ripme](https://github.com/RipMeApp/ripme) application performs all the heavy lifting. The source URLs are mostly links to various subreddits, but could be any website [supported](https://github.com/ripmeapp/ripme/wiki/Supported-Sites) by Ripme.
+- `1_get_urls.sh` - iterates through text files under `scripts/source_urls` downloading URLs of images for each of class/category. The Ripme application performs all the heavy lifting. The source URLs are mostly links to various subreddits, but could be any website [supported](https://github.com/ripmeapp/ripme/wiki/Supported-Sites) by Ripme.
 - `2_download_from_urls.sh` - downloads image files from urls found in text files in `raw_data` directory.
 - `3_create_train.sh` - creates `data/train` directory and copies all `*.jpg` and `*.jpeg` files into it from `raw_data`. Also removes corrupted images.
 - `4_create_test.sh` - creates `data/test` directory and moves `N=2000` random files for each class from `data/train` to `data/test` (change this number inside the script if you need a different train/test split). Alternatively, you can run it multiple times, each time it will move `N` images for each class from `data/train` to `data/test`.
