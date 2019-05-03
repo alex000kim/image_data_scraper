@@ -1,6 +1,6 @@
 #!/bin/bash
 
-N=2000
+N=200
 scripts_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 base_dir="$(dirname "$scripts_dir")"
 raw_data_dir="$base_dir/raw_data"
