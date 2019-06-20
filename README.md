@@ -35,7 +35,7 @@ $ bash 3_create_train.sh
 $ bash 4_create_test.sh
 $ cd ../data
 $ ls train
-casts cows dogs
+cats cows dogs
 $ ls test
-casts cows dogs
+cats cows dogs
 ```
